@@ -5,7 +5,6 @@ import Cube from "./Cube";
 import Text from "./Text";
 import Lines from "./Lines";
 import InvisibleCube from "./InvisibleCube";
-import DestinationCup from "./DestinationCup";
 
 import "./App.css";
 const Canva = ({ size, ...props }) => {
@@ -260,7 +259,7 @@ const Canva = ({ size, ...props }) => {
                 if (cube.type == null) {
                   return <InvisibleCube position={cube.position} />;
                 } else if (cube.type == "des") {
-                  return <DestinationCup position={cube.position} />;
+                  return <Cube position={cube.position} color="hotpink" />;
                 } else if (cube.type == "text") {
                   return (
                     <Text
